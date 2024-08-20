@@ -489,7 +489,7 @@ public class InventoryManagementService {
 			final OrderDetails order = orderService.mapToEntity(msg);
 			final OrderDetails savedOrderDetails = orderService.insert(order);
 			if (LOG.isInfoEnabled()) {
-				LOG.info("Order Details successfully created with ID: {}", msg.getOrderId());
+				LOG.info("Order Details successfully created with ID: {}", savedOrderDetails.getOrderId());
 			}
 
 			return orderService.mapToDTO(savedOrderDetails);
