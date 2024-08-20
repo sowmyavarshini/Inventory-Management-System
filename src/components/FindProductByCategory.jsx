@@ -21,7 +21,7 @@ const FindProductByCategory = () => {
     } catch (error) {
       console.error('Error fetching products:', error);
       setMessage('');
-      setErrors('Failed to fetch products for the specified brand.');
+      setErrors('Failed to fetch products for the specified category.');
       setProducts('');
     }
   };

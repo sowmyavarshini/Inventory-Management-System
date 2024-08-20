@@ -161,6 +161,7 @@ const UpdateProduct = () => {
             <label className='form-label'>Enter the stock available</label>
             <input
               type="number"
+              min="1"
               value={product.stockAvailable}
               className={`form-control ${errors.stockAvailable ? 'is-invalid' : ''}`}
               onChange={(e) => setProduct({ ...product, stockAvailable: e.target.value })}
@@ -173,6 +174,7 @@ const UpdateProduct = () => {
             <input
               type="number"
               value={product.price}
+              min="1"
               className={`form-control ${errors.price ? 'is-invalid' : ''}`}
               onChange={(e) => setProduct({ ...product, price: e.target.value })}
             />

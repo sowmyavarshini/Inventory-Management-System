@@ -10,6 +10,7 @@ const AddOrder = () => {
   const [quantityError, setQuantityError] = useState('');
   const [productError, setProductError] = useState('');
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState('');
 
   useEffect(() => {
     // Fetch the list of products to populate the dropdown
@@ -56,7 +57,7 @@ const AddOrder = () => {
     } catch (error) {
       console.error('Error creating order:', error);
       setMessage('');
-      setQuantityError('Failed to create order.');
+      setErrors('Failed to create order.');
     }
   };
 

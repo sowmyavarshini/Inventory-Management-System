@@ -176,7 +176,7 @@ const Register = () => {
                 placeholder="Confirm Password"
                 className='form-control'
             />
-            {errors.confirmPassword && <p className="error">{errors.confirmPassword}</p>}
+            {errors.confirmPassword && <p className="text-danger">{errors.confirmPassword}</p>}
             </div>
             <div className='form-group mb-2'>
             <label className='form-label'>Enter email</label>

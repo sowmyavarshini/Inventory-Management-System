@@ -149,6 +149,7 @@ const AddProduct = () => {
                  placeholder="Product Price" 
                  name='price' 
                  value={price} 
+                 min="1"
                  className={`form-control ${errors.price ? 'is-invalid' : ''}`}
                  onChange={(e)=>
                   setPrice(e.target.value)}
