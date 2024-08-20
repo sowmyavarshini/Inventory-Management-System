@@ -11,6 +11,6 @@ Currently, two official plugins are available:
 # Inventory-Management-System
 Inventory Management System is a full-stack application using ReactJS for the frontend and Spring Boot for the backend, with MySQL as the database. It supports CRUD operations, including finding products by name or category. The application also generates customer and sales reports via backend APIs.
 
-![Data Model Diagram](images/ER Diagram.png)
+![Data Model Diagram](images/ERDiagram.png)
 
 
