@@ -33,15 +33,17 @@ const AddOrder = () => {
     setProductError('');
 
     // Basic validation
+
+    let hasError = false;
     if (!orderedQuantity || orderedQuantity < 1) {
       setQuantityError('Ordered quantity must be at least 1.');
-      return;
+      hasError = true;
     }
     if (!selectedProduct) {
       setProductError('Please select a product.');
-      return;
+      hasError = true;
     }
-
+    if (hasError) return;
     try {
       const orderData = {
         orderedQuantity,
