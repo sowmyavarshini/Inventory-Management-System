@@ -54,7 +54,7 @@ const FetchProduct = () => {
            <h4 className='text-center'>Product Details</h4>
                 <p><strong>Name:</strong> {productDetails.productName}</p>
                 <p><strong>Stock Available:</strong> {productDetails.stockAvailable}</p>
-                <p><strong>Price:</strong> ${productDetails.price}</p>
+                <p><strong>Price:</strong> ₹{productDetails.price}</p>
                 <p><strong>Barcode:</strong> {productDetails.barcode}</p>
                 <p><strong>Brand:</strong> {productDetails.brandName}</p>
                 <p><strong>Category:</strong> {productDetails.categoryName}</p>
